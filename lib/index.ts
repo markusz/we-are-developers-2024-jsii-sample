@@ -1,10 +1,7 @@
 import {
   readFileSync
 } from 'fs';
-
-export interface SessionFinderProps {
-  readonly user: string;
-}
+import * as moment from 'moment-timezone';
 
 // Defines a Struct, an immutable pure data entities
 export interface Session {
@@ -25,15 +22,12 @@ export interface GetRecommendationsResult {
 
 
 export class WeAreDevelopersProgramGuide {
-  private readonly user: string;
   private readonly program: Session[];
 
-  public constructor(props: SessionFinderProps) {
-    console.log(__dirname)
+  public constructor() {
     const jsonData = readFileSync(`${__dirname}/sessions.json`, 'utf8');
     const data = JSON.parse(jsonData);
 
-    this.user = props.user;
     this.program = data
   }
 
@@ -51,10 +45,18 @@ export class WeAreDevelopersProgramGuide {
   }
 
   public findSessionsByTitle(title: string): Session[] {
-    return this.program.filter((session: Session) => session.title.includes(title))
+    return this.program.filter((session: Session) => session.title.toLowerCase().includes(title.toLowerCase()))
   }
 
-  public findSessionsByTime(title: string): string {
-    return `Hello, ${this.user}. You searched for ${title}!`
+  public findSessionsByTime(searchTime: string): Session[] {
+    const time = moment(searchTime)
+
+    const results = this.program.filter((session: Session) => {
+      const start = moment(session.sessionStart)
+      const end = moment(session.sessionEnd)
+
+      return time.isAfter(start) && time.isBefore(end)
+    })
+    return results
   }
 }
