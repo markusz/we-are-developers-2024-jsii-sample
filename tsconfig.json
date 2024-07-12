@@ -27,8 +27,7 @@
     "stripInternal": false,
     "target": "es2020",
     "composite": false,
-    "tsBuildInfoFile": "dist/tsconfig.tsbuildinfo",
-    "allowSyntheticDefaultImports": true
+    "tsBuildInfoFile": "dist/tsconfig.tsbuildinfo"
   },
   "include": [
     "**/*.ts"

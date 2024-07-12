@@ -1,5 +1,6 @@
 .jsii
 dist/
+*.iml
 
 *.js
 !/jest.config.js
