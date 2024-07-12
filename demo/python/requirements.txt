@@ -1,1 +1,1 @@
-../../dist/python/hello_jsii-1.0.1.tar.gz
+../../dist/python/wearedevelopers.programguide-0.0.2.tar.gz
