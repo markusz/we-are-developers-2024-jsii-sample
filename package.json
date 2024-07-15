@@ -2,14 +2,15 @@
   "name": "we-are-developers-2024-jsii-sample",
   "version": "0.0.2",
   "description": "A demonstration jsii library",
-  "main": "lib/index.ts",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bundleDependencies": ["moment"],
   "scripts": {
     "build": "jsii",
     "build:watch": "jsii --watch",
     "package:code": "jsii-pacmak -c",
-    "package:bundle": "jsii-pacmak"
+    "package:clear": "rm -rf ./dist",
+    "package:bundle": "jsii-pacmak -v"
   },
   "keywords": [],
   "author": {

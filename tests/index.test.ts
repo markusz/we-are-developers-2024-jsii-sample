@@ -1,4 +1,4 @@
-import { WeAreDevelopersProgramGuide } from "../lib/index";
+import { WeAreDevelopersProgramGuide } from "../index";
 
 describe('WeAreDevelopersProgramGuide', () => {
   describe('.findSessionsByTitle(..)', () => {

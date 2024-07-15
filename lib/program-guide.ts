@@ -1,34 +1,13 @@
-import {
-  readFileSync
-} from 'fs';
 import * as moment from 'moment';
-
-// Defines a Struct, an immutable pure data entities
-export interface Session {
-  readonly sessionId: string;
-  readonly title: string;
-  readonly location: string,
-  readonly capacity: number,
-  readonly speaker: string,
-  readonly sessionStart: string,
-  readonly sessionEnd: string,
-  readonly duration: number
-}
-
-export interface GetRecommendationsResult {
-  readonly session: Session,
-  readonly recommendations: Session[]
-}
+import sessions from "./sessions";
+import { GetRecommendationsResult, Session } from "./interfaces";
 
 
 export class WeAreDevelopersProgramGuide {
   private readonly program: Session[];
 
   public constructor() {
-    const jsonData = readFileSync(`${__dirname}/sessions.json`, 'utf8');
-    const data = JSON.parse(jsonData);
-
-    this.program = data
+    this.program = sessions
   }
 
   public getRecommendedSessionsForSession(sessionId: string, numberOfRecommendations: number = 3): GetRecommendationsResult {
@@ -42,6 +21,10 @@ export class WeAreDevelopersProgramGuide {
       session,
       recommendations
     }
+  }
+
+  public retrieveAllSessions(): Session[] {
+    return this.program
   }
 
   public findSessionsByTitle(title: string): Session[] {

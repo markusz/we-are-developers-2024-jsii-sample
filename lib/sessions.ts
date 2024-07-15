@@ -1,10 +1,12 @@
-[
+const sessions = [
   {
     "sessionId": "614284",
     "title": "Keynote by Scott Farquhar, Founder & CEO of Atlassian",
     "location": "Main Stage",
     "capacity": 5000,
-    "speaker": "Scott Farquhar",
+    "speakers": [
+      "Scott Farquhar"
+    ],
     "sessionStart": "2024-07-18T07:30:00.000Z",
     "sessionEnd": "2024-07-18T08:00:00.000Z",
     "duration": 30
@@ -14,7 +16,9 @@
     "title": "Developer Experience in the Age of AI",
     "location": "Main Stage",
     "capacity": 5000,
-    "speaker": "Rajeev Rajan",
+    "speakers": [
+      "Rajeev Rajan"
+    ],
     "sessionStart": "2024-07-18T08:10:00.000Z",
     "sessionEnd": "2024-07-18T08:40:00.000Z",
     "duration": 30
@@ -24,7 +28,9 @@
     "title": "Keynote by Peter Bosch, CEO of CARIAD",
     "location": "Main Stage",
     "capacity": 5000,
-    "speaker": "Peter Bosch",
+    "speakers": [
+      "Peter Bosch"
+    ],
     "sessionStart": "2024-07-18T08:50:00.000Z",
     "sessionEnd": "2024-07-18T09:20:00.000Z",
     "duration": 30
@@ -34,7 +40,9 @@
     "title": "Fireside Chat with David Heinemeier Hansson",
     "location": "Main Stage",
     "capacity": 5000,
-    "speaker": "David Heinemeier Hansson",
+    "speakers": [
+      "David Heinemeier Hansson"
+    ],
     "sessionStart": "2024-07-18T09:30:00.000Z",
     "sessionEnd": "2024-07-18T10:00:00.000Z",
     "duration": 30
@@ -58,7 +66,9 @@
     "title": "Keynote by Prashanth Chandrasekar, CEO of Stack Overflow",
     "location": "Main Stage",
     "capacity": 5000,
-    "speaker": "Prashanth Chandrasekar",
+    "speakers": [
+      "Prashanth Chandrasekar"
+    ],
     "sessionStart": "2024-07-18T11:30:00.000Z",
     "sessionEnd": "2024-07-18T12:00:00.000Z",
     "duration": 30
@@ -68,7 +78,9 @@
     "title": "The shadows of reasoning – new design paradigms for a gen AI world",
     "location": "Main Stage",
     "capacity": 5000,
-    "speaker": "Jonas Andrulis",
+    "speakers": [
+      "Jonas Andrulis"
+    ],
     "sessionStart": "2024-07-18T12:10:00.000Z",
     "sessionEnd": "2024-07-18T12:40:00.000Z",
     "duration": 30
@@ -78,7 +90,9 @@
     "title": "Mastering AI-Driven Problem Solving in Engineering with Observability",
     "location": "Main Stage",
     "capacity": 5000,
-    "speaker": "Jemiah Sius",
+    "speakers": [
+      "Jemiah Sius"
+    ],
     "sessionStart": "2024-07-18T12:50:00.000Z",
     "sessionEnd": "2024-07-18T13:20:00.000Z",
     "duration": 30
@@ -88,7 +102,9 @@
     "title": "What AI Can, Can't, and Shouldn't do for Games",
     "location": "Main Stage",
     "capacity": 5000,
-    "speaker": "Romero",
+    "speakers": [
+      "Romero"
+    ],
     "sessionStart": "2024-07-18T13:30:00.000Z",
     "sessionEnd": "2024-07-18T14:00:00.000Z",
     "duration": 30
@@ -98,7 +114,9 @@
     "title": "Stay: Surviving and Thriving in Tech",
     "location": "Main Stage",
     "capacity": 5000,
-    "speaker": "Brenda Romero",
+    "speakers": [
+      "Brenda Romero"
+    ],
     "sessionStart": "2024-07-18T14:50:00.000Z",
     "sessionEnd": "2024-07-18T15:20:00.000Z",
     "duration": 30
@@ -121,7 +139,9 @@
     "title": "AI: Superhero or Supervillain? How and Why with Scott Hanselman",
     "location": "Main Stage",
     "capacity": 5000,
-    "speaker": "Scott Hanselman",
+    "speakers": [
+      "Scott Hanselman"
+    ],
     "sessionStart": "2024-07-19T07:00:00.000Z",
     "sessionEnd": "2024-07-19T07:30:00.000Z",
     "duration": 30
@@ -131,7 +151,9 @@
     "title": "Scaling to 169M queries a month",
     "location": "Main Stage",
     "capacity": 5000,
-    "speaker": "Denis Yarats",
+    "speakers": [
+      "Denis Yarats"
+    ],
     "sessionStart": "2024-07-19T07:40:00.000Z",
     "sessionEnd": "2024-07-19T08:10:00.000Z",
     "duration": 30
@@ -141,7 +163,9 @@
     "title": "Fireside Chat with Kris Rasmussen, CTO at Figma",
     "location": "Main Stage",
     "capacity": 5000,
-    "speaker": "Kris Rasmussen",
+    "speakers": [
+      "Kris Rasmussen"
+    ],
     "sessionStart": "2024-07-19T08:20:00.000Z",
     "sessionEnd": "2024-07-19T08:50:00.000Z",
     "duration": 30
@@ -151,7 +175,9 @@
     "title": "The transformative impact of GenAI for software development and its implications for cybersecurity",
     "location": "Main Stage",
     "capacity": 5000,
-    "speaker": "Chris Wysopal",
+    "speakers": [
+      "Chris Wysopal"
+    ],
     "sessionStart": "2024-07-19T09:00:00.000Z",
     "sessionEnd": "2024-07-19T09:30:00.000Z",
     "duration": 30
@@ -161,7 +187,9 @@
     "title": "Keynote by Scott Chacon, CEO of GitButler, Co-founder of GitHub",
     "location": "Main Stage",
     "capacity": 5000,
-    "speaker": "Scott Chacon",
+    "speakers": [
+      "Scott Chacon"
+    ],
     "sessionStart": "2024-07-19T09:40:00.000Z",
     "sessionEnd": "2024-07-19T10:10:00.000Z",
     "duration": 30
@@ -171,7 +199,9 @@
     "title": "Quantum Computing - The tiny and the big challenges",
     "location": "Main Stage",
     "capacity": 5000,
-    "speaker": "Alex Waldherr",
+    "speakers": [
+      "Alex Waldherr"
+    ],
     "sessionStart": "2024-07-19T10:20:00.000Z",
     "sessionEnd": "2024-07-19T10:50:00.000Z",
     "duration": 30
@@ -181,7 +211,9 @@
     "title": "Collaborative Intelligence: The Human & AI Partnership",
     "location": "Main Stage",
     "capacity": 5000,
-    "speaker": "Panel TBA",
+    "speakers": [
+      "Panel TBA"
+    ],
     "sessionStart": "2024-07-19T11:00:00.000Z",
     "sessionEnd": "2024-07-19T11:30:00.000Z",
     "duration": 30
@@ -191,7 +223,9 @@
     "title": "Keynote by Douglas Crockford, Inventor of JSON",
     "location": "Main Stage",
     "capacity": 5000,
-    "speaker": "Douglas Crockford",
+    "speakers": [
+      "Douglas Crockford"
+    ],
     "sessionStart": "2024-07-19T13:00:00.000Z",
     "sessionEnd": "2024-07-19T13:30:00.000Z",
     "duration": 30
@@ -201,9 +235,13 @@
     "title": "Unlocking the Future: Breakthrough Application Performance and Capabilities with NVIDIA",
     "location": "Main Stage",
     "capacity": 5000,
-    "speaker": "Ankit Patel",
+    "speakers": [
+      "Ankit Patel"
+    ],
     "sessionStart": "2024-07-19T12:20:00.000Z",
     "sessionEnd": "2024-07-19T12:50:00.000Z",
     "duration": 30
   }
 ]
+
+export default sessions;
