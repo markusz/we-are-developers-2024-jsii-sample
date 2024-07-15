@@ -2,7 +2,6 @@ from wearedevelopers.programguide import WeAreDevelopersProgramGuide
 
 if __name__ == "__main__":
     guide = WeAreDevelopersProgramGuide()
-
     sessions = guide.retrieve_all_sessions()
     print(f"Total number of sessions: {len(guide.retrieve_all_sessions())} \n")
     ai_sessions = guide.find_sessions_by_title("AI")

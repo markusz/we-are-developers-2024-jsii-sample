@@ -7,13 +7,22 @@
     <groupId>de.wearedevelopers.jsii.demo</groupId>
     <artifactId>programguide</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
     <dependencies>
         <dependency>
-            <groupId>com.sample</groupId>
-            <artifactId>sample</artifactId>
+            <groupId>wearedevelopers</groupId>
+            <artifactId>programguide</artifactId>
             <version>1.0</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/../../dist/java/wearedevelopers/programguide/0.0.2/programguide-0.0.2.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>software.amazon.jsii</groupId>
+            <artifactId>jsii-runtime</artifactId>
+            <version>1.101.0</version>
         </dependency>
 
     </dependencies>
