@@ -117,3 +117,5 @@ n
 
 # Custom
 .idea/
+
+/demo/java/target
