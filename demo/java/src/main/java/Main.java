@@ -1,8 +1,6 @@
 import wearedevelopers.programguide.Session;
 import wearedevelopers.programguide.WeAreDevelopersProgramGuide;
 
-import java.util.List;
-
 public class Main {
     public static void main(String[] args) {
         var guide = new WeAreDevelopersProgramGuide();
